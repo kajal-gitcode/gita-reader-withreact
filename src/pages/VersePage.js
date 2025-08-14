@@ -110,12 +110,12 @@ export default function VersePage() {
 
       {/* Audio Player */}
   <audio
-    key={`${selectedChapter}-${selectedVerse}`}
+    key={`${chapterNum}-${verseNum}`}
     controls
     className="mt-4"
   >
     <source
-      src={`/audio/verse_${String(selectedChapter).padStart(2, '0')}_${String(selectedVerse).padStart(2, '0')}_paused.wav`}
+      src={`/audio/verse_${String(chapterNum).padStart(2, '0')}_${String(verseNum).padStart(2, '0')}_paused.wav`}
       type="audio/wav"
     />
     Your browser does not support the audio element.
